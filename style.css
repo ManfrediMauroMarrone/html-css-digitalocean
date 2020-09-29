@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: helvetica;
+}
+
+.nav-container{
+    width: 1980px;
+    margin: auto;
+    background-color: red;
+}
+
+.nav.container::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.nav-top::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.nav-top-left{
+    width: 50%;
+    padding: 10px 0;
+    float: left;
+    background-color: white;
+
+}
+
+.new-sticker{
+    display: inline-block;
+    background-color: #00d7d2;
+    border: 1px solid #00d7d2;
+    border-radius: 5px;
+    padding: 3px 8px;
+    font-size: 12px;
+}
+
+.digital-offer{
+    display: inline-block;
+    height: 100%;
+    text-decoration: none;
+    color: #5b6987;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.nav-top-right{
+    width: 50%;
+    padding: 12px 0;
+    float: left;
+    background-color: white;
+}
+
+.nav-top-right ul{
+    list-style-type: none;
+    text-align: right;
+}
+
+.nav-top-right ul li{
+    display: inline-block;
+}
+
+.nav-top-right ul li a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #5b6987;
+}
+
+.nav-bot{
+    /* padding: 10px 0; */
+
+}
+
+.nav-bot-left{
+    padding: 10px;
+    padding-left: 10px;
+    border: 1px solid black;
+}
+
+.digital-logo{
+    height: 30px;
+}
+
+.digital-logo img{
+    height: 100%;
+}
