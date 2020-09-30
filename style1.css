@@ -5,25 +5,26 @@
 }
 
 .container{
-    max-width: 100%;
-    margin: 0;
+    /* border: 1px solid black; */
 }
 
 .extra-nav-left{
     padding: 10px 0;
+    background-color: yellow;
 }
 
 .extra-nav-right{
     padding: 10px 0;
+    background-color: red;
 }
 
 .extra-nav-right ul{
     text-align: right;
+    list-style-type: none;
 }
 
 .extra-nav-right ul li{
     display: inline-block;
-    list-style-type: none;
 }
 
 .extra-nav-right ul li a{
@@ -32,7 +33,12 @@
     color: #5b6987;
 }
 
-.new-sticker{
+.navbar{
+    min-height: auto;
+    margin-bottom: auto;
+}
+
+/* .new-sticker{
     display: inline-block;
     background-color: #00d7d2;
     border: 1px solid #00d7d2;
@@ -49,11 +55,10 @@
     color: #5b6987;
     font-size: 12px;
     font-weight: 400;
-}
+} */
 
 .navbar-default{
     background-color: white;
-    border-bottom: 1px solid black;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -76,19 +81,27 @@
 }
 
 .nav>li {
+    /* padding-top: 3px; */
+}
+
+.navbar-collapse{
     padding-top: 3px;
 }
 
 
 #list-left li a{
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
     color: #031b4f;
 }
 
 #list-left li a i{
     font-size: 12px;
     padding-left: 3px;
+}
+
+#list-right{
+    padding-top: 9px;
 }
 
 #list-right>li:first-child a{
@@ -108,6 +121,94 @@
 #list-right li:first-child{
     margin-right: 10px;
 }
+                            /* Jumbo */
+.jumbo{
+    padding: 50px 0;
+    background-image: url(https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg);
+    background-size: cover;
+    background-position: right
+}
+
+.jumbo .container{
+    padding-top: 70px;
+}
+
+.jumbo-text{
+    padding: 125px 0;
+}
+
+.jumbo-text h1{
+    font-size: 58px;
+    font-weight: 400;
+    color: white;
+}
+
+.jumbo-text p{
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+}
+
+.sign-form{
+    width: 370px;
+    border-radius: 7px;
+    background-color: white;
+}
+
+.sign-form-top{
+    border-radius: 7px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    padding: 18px 0;
+    color: #031b4e;
+    background-color: #F3F5F9
+}
+
+.sign-form-mid{
+    text-align: center;
+    padding: 40px 0;
+}
+
+.sign-form-mid form input{
+    width: 82%;
+    font-size: 17px;
+    padding: 10px 5px;
+    margin-bottom: 5px;
+    border: 1px solid lightgrey;
+}
+
+.form-button-primary{
+    padding: 15px 78px;
+    font-size: 18px;
+    background-color: #006aff;
+}
+
+.sign-form-bottom{
+    padding: 25px 0;
+    text-align: center;
+}
+
+.sign-form-bottom .btn:first-child{
+    border: 1px solid #006aff;
+    color: #006aff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 11px 34px;
+}
+
+.sign-form-bottom .btn:last-child{
+    padding: 10px 17px;
+    border: 1px solid #006aff;
+    color: #006aff;
+    font-size: 17px;
+}
+
+.terms{
+    text-align: center;
+    color: white;
+    background-color: green;
+}
 
 @media (min-width: 768px) {
 
@@ -120,7 +221,7 @@
     }
 
     .navbar-collapse.collapse {
-        display: none !important; /* per sovrascrivere l'important di bootstrap */
+        display: none !important;
     }
 }
 
@@ -136,7 +237,7 @@
     }
 
     .navbar-collapse.collapse {
-        display: block !important; /* per sovrascrivere l'important di bootstrap */
+        display: block !important;
     }
 
 
