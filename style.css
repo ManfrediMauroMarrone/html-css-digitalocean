@@ -141,7 +141,7 @@ body{
     padding: 50px 0;
     background-image: url(https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg);
     background-size: cover;
-    background-position: right
+    background-position: center
 }
 
 .jumbo .container{
@@ -286,7 +286,12 @@ body{
     color: #031b4e
 }
 
-.container-features p{
+.container-features h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.container-features p:nth-child(2){
     padding: 0px 162px;
     display: block;
     font-size: 20px;
@@ -294,17 +299,26 @@ body{
 }
 
 .cube{
-    height: 400px;
-    background-color: red;
-    border: 1px solid black;
+    /* background-color: red;
+    border: 1px solid black; */
 }
 
-.feature-card-top-left{
-    float: left;
+.feature-card-top-left,
+.feature-card-top-right,
+.feature-card-bot-left,
+.feature-card-bot-right{
+    text-align: left;
 }
 
-.feature-card-top-right{
-    float: left;
+.feature-card-top-left p,
+.feature-card-top-right p,
+.feature-card-bot-left p,
+.feature-card-bot-right p{
+    font-size: 16px;
+}
+
+.feature-card-top-left p{
+    text-align: left;
 }
 
 @media (max-width: 480px) {
