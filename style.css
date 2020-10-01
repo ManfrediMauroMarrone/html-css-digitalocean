@@ -338,6 +338,59 @@ body{
     text-align: left;
 }
 
+                            /* Developers------- */
+.developers{
+    text-align: center;
+    background-color: #f3f5f9;
+}
+.container-carousel{
+    position: relative;
+}
+
+.container-carousel h2{
+    padding-top: 50px;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.container-carousel p:first-of-type{
+    font-size: 20px;
+    padding-bottom: 40px;
+}
+
+.container-carousel img{
+    width: 100%;
+}
+
+.container-carousel p:last-of-type{
+    font-size: 16px;
+    padding-top: 20px;
+}
+
+.container-carousel::after{
+    content: "\f061";
+    font-family: FontAwesome;
+    position: absolute;
+    font-size: 20px;
+    top: 55%;
+    left: 120%;
+    transform: translateY(-55%);
+}
+
+.container-carousel::before{
+    content: "\f060";
+    font-family: FontAwesome;
+    font-size: 20px;
+    position: absolute;
+    top: 55%;
+    right: 120%;
+    transform: translateY(-55%);
+}
+
+.dots i{
+    font-size: 10px;
+    color: #0069ff;
+}
 @media (max-width: 480px) {
     .container-features p{
         padding: 0;
