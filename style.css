@@ -418,6 +418,47 @@ body{
     color: #0069ff;
     font-weight: 600;
 }
+/* -----------------------------------world-------------- */
+.world{
+    background: #031b4e url(https://prismic-io.s3.amazonaws.com/www-static/bb563ec9-49ef-4ceb-8468-da84f1509fcc_bg-map-solid.svg);
+    color: white;
+}
+.world ul{
+    list-style-type: none;
+}
+.world span{
+    display: inline-block;
+}
+
+.code,
+.city,
+.speed{
+    float: left;
+}
+
+.code,
+.speed{
+    width: 20%;
+}
+
+.code{
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.city{
+    width: 60%;
+    color: #5b6987;
+    font-size: 13px;
+}
+
+.speed a{
+    text-decoration: none;
+    color: #00d7d2;
+    font-size: 12px;
+    font-weight: 600;
+}
+
 @media (max-width: 480px) {
     .container-features p{
         padding: 0;
