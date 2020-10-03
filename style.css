@@ -576,6 +576,29 @@ body{
     font-size: 10px;
     color: #0069ff;
 }
+/* ---------------------------------get-started-------------- */
+.get-started{
+    padding: 60px 0;
+    color: white;
+    background-image: url(https://prismic-io.s3.amazonaws.com/www-static/b4ba92a9-0956-484b-9a3f-68ef4d550fd4_bg-home-cta.svg);
+}
+
+.get-started-left h2{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.get-started-right{
+    text-align: right;
+}
+
+.get-started-right .btn{
+    padding: 20px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #0069ff;
+    background-color: white;
+}
 @media (max-width: 480px) {
     .container-features p{
         padding: 0;
@@ -630,6 +653,20 @@ body{
     .world-paragraph{
         padding-left: 0;
         padding-right: 0;
+    }
+
+    .statement p:nth-child(2){
+        padding: 20px 0;
+    }
+
+    .team-title p{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .get-started-left,
+    .get-started-right{
+        text-align: center;
     }
 }
 
