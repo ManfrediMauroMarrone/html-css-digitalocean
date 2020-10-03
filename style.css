@@ -340,6 +340,7 @@ body{
 }
 /* --------------------------Developers---------------------- */
 .developers{
+    padding: 80px 0;
     text-align: center;
     background-color: #f3f5f9;
 }
@@ -348,7 +349,6 @@ body{
 }
 
 .container-carousel h2{
-    padding-top: 50px;
     font-size: 36px;
     font-weight: 600;
 }
@@ -385,6 +385,10 @@ body{
     top: 55%;
     right: 120%;
     transform: translateY(-55%);
+}
+
+.dots{
+    text-align: center;
 }
 
 .dots i{
@@ -451,6 +455,16 @@ body{
     padding-bottom: 40px;
 }
 
+.line{
+    border-bottom: 1px solid #5b6987;
+}
+
+.line::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .code,
 .city,
 .speed{
@@ -460,24 +474,24 @@ body{
 
 .code,
 .speed{
-    width: 20%;
+    width: 19%;
 }
 
 .code{
     font-size: 13px;
     font-weight: 800;
-    border-bottom: 1px solid #5b6987;
+    /* border-bottom: 1px solid #5b6987; */
 }
 
 .city{
-    width: 60%;
+    width: 59%;
     color: #5b6987;
     font-size: 13px;
-    border-bottom: 1px solid #5b6987;
+    /* border-bottom: 1px solid #5b6987; */
 }
 .speed{
     text-align: right;
-    border-bottom: 1px solid #5b6987;
+    /* border-bottom: 1px solid #5b6987; */
     padding-bottom: 8px;
 }
 
@@ -493,6 +507,74 @@ body{
 
 #sgp{
     border: none;
+}
+
+/* -------------------------------teams-------------- */
+.teams{
+    padding: 90px 0;
+    background-color: #f3f5f9
+
+}
+.team-title{
+    text-align: center;
+}
+.team-title h2{
+    font-size: 36PX;
+    font-weight: 600;
+    color: #031b4e
+}
+
+.team-title p{
+    font-size: 20px;
+    padding: 0px 180px;
+    padding-top: 9px;
+    padding-bottom: 40px;
+}
+
+.img-rocker{
+    margin: auto;
+    max-width: 200px;
+}
+
+.img-rocker img{
+    width: 100%;
+}
+
+.statement{
+    padding: 60px 0;
+    text-align: center;
+    background-color: white;
+}
+
+.statement p:nth-child(2){
+    padding: 20px 153px;
+    font-size: 24px;
+}
+
+.statement p:nth-child(3) a{
+    text-decoration: none;
+    color: #0069ff;
+    font-size: 16px;
+}
+
+.statement p:nth-child(4){
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+.statement p:nth-child(5){
+    font-size: 14px;
+    color: #5b6987;
+}
+
+.dots-3{
+    padding: 50px 0;
+    text-align: center;
+}
+
+.dots-3 i{
+    font-size: 10px;
+    color: #0069ff;
 }
 @media (max-width: 480px) {
     .container-features p{
@@ -527,6 +609,14 @@ body{
 
     .container-features p:nth-child(2){
         padding: 0px;
+    }
+
+    .container-carousel::after{
+        display: none;
+    }
+
+    .container-carousel::before{
+        display: none;
     }
 
     .business-card{
