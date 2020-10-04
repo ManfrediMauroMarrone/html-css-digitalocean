@@ -623,6 +623,31 @@ footer{
     font-size: 14px;
     color: #5b6886;
 }
+
+.footer-bot{
+    border-top: 1px solid #5b6886;
+}
+
+.footer-bot-left{
+    float: left;
+    padding: 20px 0;
+}
+
+.footer-bot-right{
+    float: left;
+    float: right;
+    padding: 30px 0;
+}
+
+.footer-bot-right a{
+    padding-right: 5px;
+}
+
+.footer-bot-left p{
+    display: inline-block;
+    padding-left: 20px;
+    color: #5b6886;
+}
 @media (max-width: 480px) {
     .container-features p{
         padding: 0;
@@ -691,6 +716,10 @@ footer{
     .get-started-left,
     .get-started-right{
         text-align: center;
+    }
+
+    .footer-bot-right{
+        float: left;
     }
 }
 
