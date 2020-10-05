@@ -36,6 +36,10 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+.extra-nav-left a:hover{
+    color: #006aff;
+}
+
 .extra-nav-right{
     float: left;
     width: 100%;
@@ -55,6 +59,10 @@ body{
     text-decoration: none;
     font-size: 13px;
     color: #5b6987;
+}
+
+.extra-nav-right ul li a:hover{
+    color: #006aff;
 }
 
 .navbar{
@@ -95,19 +103,19 @@ body{
     padding-left: 40px;
 }
 
-.nav>li {
-    /* padding-top: 3px; */
-}
-
 .navbar-collapse{
     padding-top: 3px;
 }
-
 
 #list-left li a{
     font-size: 14px;
     font-weight: 600;
     color: #031b4f;
+}
+
+#list-left li a:hover{
+    color: #006aff;
+    background-color: none;
 }
 
 #list-left li a i{
@@ -124,6 +132,12 @@ body{
     color: #006aff;
     background-color: white;
     border-color: #006aff;
+    transition: all 0.2s linear;
+}
+
+#list-right>li:first-child a:hover{
+    color: white;
+    background-color: #006aff;
 }
 
 #list-right>li:last-child a{
@@ -213,6 +227,10 @@ body{
     padding: 11px 34px;
 }
 
+.sign-form-bottom .btn:first-child:hover{
+    color: black;
+}
+
 .sign-form-bottom .btn:last-child{
     padding: 10px 17px;
     border: 1px solid #006aff;
@@ -221,9 +239,21 @@ body{
 }
 
 .terms{
+    padding-top: 10px;
+    padding-right: 35px;
+    float: right;
     text-align: center;
     color: white;
-    background-color: green;
+}
+
+.terms p a{
+    color: white;
+    text-decoration: none;
+}
+
+.terms p a:hover{
+    text-decoration: underline;
+    text-decoration-style: dotted;
 }
                                     /* partners */
 .partners{
@@ -315,10 +345,9 @@ body{
     padding: 15px 0 10px 5px;
 }
 
-.cube{
-    /* height: 300px;
-    background-color: red;
-    border: 1px solid black; */
+.feature-list ul li a{
+    text-decoration: none;
+    color: rgba(3, 27, 78, 0.6);
 }
 
 .feature-card-top-left,
@@ -544,6 +573,7 @@ body{
     padding: 60px 0;
     text-align: center;
     background-color: white;
+    position: relative;
 }
 
 .statement p:nth-child(2){
@@ -566,6 +596,28 @@ body{
     font-size: 14px;
     color: #5b6987;
 }
+
+.statement::after{
+    content: "\f061";
+    font-family: FontAwesome;
+    position: absolute;
+    font-size: 20px;
+    top: 55%;
+    left: 105%;
+    transform: translateY(-55%);
+}
+
+.statement::before{
+    content: "\f060";
+    font-family: FontAwesome;
+    position: absolute;
+    font-size: 20px;
+    top: 55%;
+    right: 105%;
+    transform: translateY(-55%);
+}
+
+
 
 .dots-3{
     padding: 50px 0;
@@ -599,6 +651,10 @@ body{
     font-weight: 600;
     color: #0069ff;
     background-color: white;
+}
+
+.get-started-right .btn:hover{
+    background: rgba(225,225,225,0.9)
 }
 /* ---------------------------------footer------------------ */
 footer{
@@ -716,6 +772,14 @@ footer{
     .get-started-left,
     .get-started-right{
         text-align: center;
+    }
+
+    .statement::before{
+        display: none;
+    }
+
+    .statement::after{
+        display: none;
     }
 
     .footer-bot-right{
